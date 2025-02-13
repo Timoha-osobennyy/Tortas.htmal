@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Pasteles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="body">
+    <header header >
+        <h1>Bienvenido a nuestra Tienda de Pasteles</h1>
+        <nav>
+            <ul>
+                <li><a href="#pasteles">Pasteles</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#sobre">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="pasteles">
+            <h2>Nuestros Pasteles</h2>
+            <div class="producto">
+                <h3>Pastel de Chocolate</h3>
+                <p>Delicioso pastel de chocolate con glaseado de vainilla.</p>
+                <button onclick="agregarAlCarrito('Pastel de Chocolate')">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <h3>Pastel de Fresa</h3>
+                <p>Pastel de fresa fresco y delicioso para cualquier ocasión.</p>
+                <button onclick="agregarAlCarrito('Pastel de Fresa')">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <h3>Pastel de Limón</h3>
+                <p>Refrescante pastel de limón con crema de mantequilla.</p>
+                <button onclick="agregarAlCarrito('Pastel de Limón')">Agregar al Carrito</button>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería de Pasteles</h2>
+            <div class="imagenes">
+                <img src="pastel1.jpg" alt="Pastel de Chocolate">
+                <img src="pastel2.jpg" alt="Pastel de Fresa">
+                <img src="pastel3.jpg" alt="Pastel de Limón">
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="formularioContacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una pastelería dedicada a ofrecer los mejores pasteles para tus celebraciones. Con ingredientes
+                frescos y recetas tradicionales, cada pastel es hecho a mano con amor.</p>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Tienda de Pasteles</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
